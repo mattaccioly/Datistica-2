@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/landing-page/index.html" },
+    { "source": "/assets/(.*)", "destination": "/landing-page/assets/$1" },
+    { "source": "/(.*)", "destination": "/landing-page/$1" }
+  ]
+}
