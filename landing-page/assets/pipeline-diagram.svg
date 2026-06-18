@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" fill="none" aria-hidden="true">
+  <!-- Predict ’ Optimize pipeline diagram -->
+  <rect x="0" y="0" width="800" height="420" fill="#FAFAFA"/>
+
+  <!-- Input signals -->
+  <text x="48" y="48" font-family="monospace" font-size="11" fill="#666" letter-spacing="2">UNCERTAIN INPUTS</text>
+  <circle cx="80" cy="100" r="6" stroke="#111" stroke-width="1.5" fill="none"/>
+  <circle cx="80" cy="160" r="6" stroke="#111" stroke-width="1.5" fill="none"/>
+  <circle cx="80" cy="220" r="6" stroke="#111" stroke-width="1.5" fill="none"/>
+  <circle cx="80" cy="280" r="6" stroke="#111" stroke-width="1.5" fill="none"/>
+  <circle cx="80" cy="340" r="6" stroke="#111" stroke-width="1.5" fill="none"/>
+  <text x="100" y="104" font-family="sans-serif" font-size="13" fill="#666">Demand signals</text>
+  <text x="100" y="164" font-family="sans-serif" font-size="13" fill="#666">Capacity constraints</text>
+  <text x="100" y="224" font-family="sans-serif" font-size="13" fill="#666">Cost structure</text>
+  <text x="100" y="284" font-family="sans-serif" font-size="13" fill="#666">Uncertainty scenarios</text>
+  <text x="100" y="344" font-family="sans-serif" font-size="13" fill="#666">Historical outcomes</text>
+
+  <!-- Forecast box -->
+  <rect x="280" y="80" width="160" height="260" rx="2" stroke="#E5E5E5" stroke-width="1" fill="#FFFFFF"/>
+  <text x="304" y="112" font-family="monospace" font-size="10" fill="#666" letter-spacing="1.5">FORECAST</text>
+  <line x1="304" y1="140" x2="416" y2="140" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="304" y1="170" x2="400" y2="170" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="304" y1="200" x2="410" y2="200" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="304" y1="230" x2="390" y2="230" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="304" y1="260" x2="405" y2="260" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="304" y1="290" x2="395" y2="290" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="304" y="320" font-family="sans-serif" font-size="11" fill="#999">Point estimates</text>
+
+  <!-- Arrows in -->
+  <line x1="86" y1="100" x2="280" y2="140" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="86" y1="160" x2="280" y2="180" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="86" y1="220" x2="280" y2="220" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="86" y1="280" x2="280" y2="260" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="86" y1="340" x2="280" y2="300" stroke="#E5E5E5" stroke-width="1"/>
+
+  <!-- Optimize box -->
+  <rect x="500" y="80" width="160" height="260" rx="2" stroke="#1A3C6E" stroke-width="1.5" fill="#FFFFFF"/>
+  <text x="524" y="112" font-family="monospace" font-size="10" fill="#1A3C6E" letter-spacing="1.5">OPTIMIZE</text>
+  <rect x="524" y="130" width="112" height="24" rx="1" fill="#1A3C6E" opacity="0.08"/>
+  <text x="532" y="146" font-family="sans-serif" font-size="11" fill="#1A3C6E">min cost s.t.</text>
+  <text x="524" y="178" font-family="sans-serif" font-size="11" fill="#666">£ x d capacity</text>
+  <text x="524" y="200" font-family="sans-serif" font-size="11" fill="#666">x e demand floor</text>
+  <text x="524" y="222" font-family="sans-serif" font-size="11" fill="#666">budget d B</text>
+  <line x1="524" y1="240" x2="636" y2="240" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="524" y="268" font-family="sans-serif" font-size="11" fill="#999">MIP / LP solver</text>
+
+  <!-- Arrow forecast ’ optimize -->
+  <line x1="440" y1="210" x2="500" y2="210" stroke="#111" stroke-width="1.5"/>
+  <polygon points="500,210 492,206 492,214" fill="#111"/>
+
+  <!-- Decision output -->
+  <circle cx="740" cy="210" r="10" fill="#1A3C6E"/>
+  <text x="710" y="248" font-family="monospace" font-size="10" fill="#1A3C6E" letter-spacing="1.5">DECISION</text>
+  <line x1="660" y1="210" x2="730" y2="210" stroke="#1A3C6E" stroke-width="1.5"/>
+  <polygon points="730,210 722,206 722,214" fill="#1A3C6E"/>
+
+  <text x="680" y="140" font-family="sans-serif" font-size="12" fill="#111">Allocate</text>
+  <text x="680" y="158" font-family="sans-serif" font-size="12" fill="#111">Schedule</text>
+  <text x="680" y="176" font-family="sans-serif" font-size="12" fill="#111">Prescribe</text>
+
+  <!-- Gap annotation -->
+  <rect x="280" y="368" width="380" height="36" rx="2" fill="#111" opacity="0.03"/>
+  <text x="300" y="390" font-family="monospace" font-size="10" fill="#666">Most AI stops at FORECAST. Datistica closes the loop to DECISION.</text>
+</svg>
