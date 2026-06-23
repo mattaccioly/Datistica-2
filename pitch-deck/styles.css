@@ -840,6 +840,59 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* ── Sources slide ── */
+
+.sources-disclaimer {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: -8px 0 12px;
+  font-family: var(--mono);
+  letter-spacing: 0.02em;
+}
+
+.sources-list {
+  list-style: none;
+  columns: 2;
+  column-gap: 28px;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.sources-list li {
+  break-inside: avoid;
+  font-size: 10.5px;
+  line-height: 1.45;
+  color: var(--muted);
+  margin-bottom: 7px;
+  padding-left: 0;
+}
+
+.sources-list__num {
+  font-family: var(--mono);
+  font-weight: 500;
+  color: var(--accent);
+  margin-right: 4px;
+}
+
+.sources-list em {
+  font-style: italic;
+  color: var(--ink);
+}
+
+.sources-list a {
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.sources-list a:hover {
+  text-decoration: underline;
+}
+
 /* ── Controls ── */
 
 .deck-controls {
