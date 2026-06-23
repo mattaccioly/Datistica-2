@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Datistica — investor pitch deck. AI that decides.">
+  <title>Datistica — Pitch Deck</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;450;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+    <symbol id="datistica-mark" viewBox="0 0 64 64" fill="none">
+      <path d="M14 12 L14 52" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M14 12 Q30 12 44.5 28.5" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path d="M14 32 L44.5 32" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M14 52 Q30 52 44.5 35.5" stroke="#1A3C6E" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <circle cx="48" cy="32" r="4" fill="#1A3C6E"/>
+    </symbol>
+  </svg>
+
+  <div class="deck-progress" id="progress" style="width: 7.14%"></div>
+
+  <div class="deck">
+    <div class="deck__viewport">
+
+      <!-- Slide 1 — Cover -->
+      <section class="slide is-active" data-note="One breath. &quot;We're building Latin America's first applied-science lab for the decision layer of AI.&quot; Move on.">
+        <div class="slide__body slide__body--center">
+          <svg class="cover-mark" viewBox="0 0 64 64" width="48" height="48" aria-hidden="true"><use href="#datistica-mark"/></svg>
+          <p class="cover-eyebrow">Applied-science AI lab · Latin America</p>
+          <h1 class="slide__headline slide__headline--xl">Datistica</h1>
+          <p class="slide__tagline">AI that decides.</p>
+          <p class="slide__lead slide__lead--center" style="max-width: 560px;">
+            An applied-science AI lab turning frontier research in prediction and optimization into decision systems built to be acted on.
+          </p>
+          <p class="cover-meta">Rio de Janeiro, Brazil · <a href="mailto:contact@datistica.com">contact@datistica.com</a> · <a href="https://datistica.com">datistica.com</a></p>
+        </div>
+      </section>
+
+      <!-- Slide 2 — Vision -->
+      <section class="slide slide--surface" data-note="This is the thesis in three sentences. Everything after substantiates it.">
+        <header class="slide__header">
+          <a href="#" class="slide__brand" aria-label="Datistica">
+            <svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg>
+            <span>Datistica</span>
+          </a>
+          <span class="slide__num">02</span>
+        </header>
+        <div class="slide__body slide__body--center">
+          <p class="slide__headline" style="max-width: 720px; text-align: center;">
+            Most AI tells you what will happen. Almost none tells you what to do about it.
+          </p>
+          <p class="slide__lead slide__lead--center" style="margin-top: 20px;">
+            We believe the next decade of value won't come from bigger predictions — it will come from turning prediction into the <em>right decision</em>, under real constraints, real risk, and real cost.
+          </p>
+          <p class="slide__lead slide__lead--center" style="margin-top: 16px; font-family: var(--serif); font-size: 1.25rem; color: var(--ink);">
+            We're building the lab that owns that layer in Latin America.
+          </p>
+        </div>
+      </section>
+
+      <!-- Slide 3 — Problem -->
+      <section class="slide" data-note="Name a concrete decision in the room's sector (e.g., &quot;which wells to recompletion-invest this quarter&quot;). Make the gap visceral.">
+        <header class="slide__header">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">03</span>
+        </header>
+        <div class="slide__body slide__body--split slide__body--problem">
+          <div class="problem-copy">
+            <p class="slide__label">The problem</p>
+            <h2 class="slide__headline">Prediction got cheap.<br>Good decisions didn't.</h2>
+            <ul class="bullet-list bullet-list--compact">
+              <li>The forecast is no longer the bottleneck — <strong>the decision that follows it is.</strong></li>
+              <li>Value leaks when humans guess the action under constraints the model never saw.</li>
+              <li>In LATAM, high-stakes decisions still run on <strong>informal heuristics</strong> — bias-prone. [18]</li>
+              <li>Deep technical talent is <strong>underused or leaving</strong> — PhD underemployment, brain drain. [18]</li>
+            </ul>
+          </div>
+          <figure class="gap-visual" aria-labelledby="gap-caption">
+            <svg class="gap-visual__svg" viewBox="0 0 520 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+              <title id="gap-caption">The gap between forecast and decision</title>
+              <text x="40" y="28" fill="#999" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2">DATA</text>
+              <text x="210" y="28" fill="#999" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2">FORECAST</text>
+              <text x="390" y="28" fill="#1A3C6E" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2">DECISION</text>
+              <circle cx="32" cy="72" r="4" stroke="#111" stroke-width="1.5" fill="none"/>
+              <circle cx="32" cy="112" r="4" stroke="#111" stroke-width="1.5" fill="none"/>
+              <circle cx="32" cy="152" r="4" stroke="#111" stroke-width="1.5" fill="none"/>
+              <circle cx="32" cy="192" r="4" stroke="#111" stroke-width="1.5" fill="none"/>
+              <circle cx="32" cy="232" r="4" stroke="#111" stroke-width="1.5" fill="none"/>
+              <rect x="180" y="52" width="120" height="200" rx="2" stroke="#E5E5E5" stroke-width="1" fill="#FAFAFA"/>
+              <line x1="200" y1="88" x2="280" y2="88" stroke="#E5E5E5" stroke-width="1"/>
+              <line x1="200" y1="118" x2="270" y2="118" stroke="#E5E5E5" stroke-width="1"/>
+              <line x1="200" y1="148" x2="275" y2="148" stroke="#E5E5E5" stroke-width="1"/>
+              <line x1="200" y1="178" x2="265" y2="178" stroke="#E5E5E5" stroke-width="1"/>
+              <line x1="200" y1="208" x2="272" y2="208" stroke="#E5E5E5" stroke-width="1"/>
+              <rect x="360" y="52" width="120" height="200" rx="2" stroke="#1A3C6E" stroke-width="1.5" fill="#fff"/>
+              <rect x="378" y="88" width="84" height="26" rx="1" fill="rgba(26,60,110,0.1)"/>
+              <circle cx="420" cy="168" r="10" fill="#1A3C6E"/>
+              <line x1="36" y1="72" x2="180" y2="100" stroke="#E5E5E5" stroke-width="1"/>
+              <line x1="36" y1="152" x2="180" y2="140" stroke="#E5E5E5" stroke-width="1"/>
+              <line x1="36" y1="232" x2="180" y2="200" stroke="#E5E5E5" stroke-width="1"/>
+              <line x1="300" y1="152" x2="360" y2="152" stroke="#111" stroke-width="1.5"/>
+              <polygon points="360,152 352,148 352,156" fill="#111"/>
+              <rect x="180" y="268" width="120" height="52" rx="2" fill="#FAFAFA" stroke="#E5E5E5" stroke-width="1"/>
+              <text x="240" y="288" text-anchor="middle" fill="#999" font-family="IBM Plex Sans, sans-serif" font-size="10">Most AI stops here</text>
+              <text x="240" y="302" text-anchor="middle" fill="#999" font-family="IBM Plex Mono, monospace" font-size="8">Cheap · commoditized</text>
+              <rect x="350" y="268" width="140" height="52" rx="2" fill="rgba(26,60,110,0.06)" stroke="#1A3C6E" stroke-width="1"/>
+              <text x="420" y="286" text-anchor="middle" fill="#1A3C6E" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="500">Datistica closes</text>
+              <text x="420" y="300" text-anchor="middle" fill="#1A3C6E" font-family="IBM Plex Sans, sans-serif" font-size="10" font-weight="500">the gap</text>
+              <text x="420" y="314" text-anchor="middle" fill="#1A3C6E" font-family="IBM Plex Mono, monospace" font-size="8">Where value lives</text>
+              <rect x="300" y="130" width="60" height="44" rx="2" stroke="#E5E5E5" stroke-width="1" stroke-dasharray="4 3" fill="none"/>
+              <text x="308" y="150" fill="#666" font-family="IBM Plex Mono, monospace" font-size="8">VALUE</text>
+              <text x="308" y="162" fill="#666" font-family="IBM Plex Mono, monospace" font-size="8">LEAKS</text>
+            </svg>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Slide 4 — Why now -->
+      <section class="slide slide--surface" data-note="&quot;Right layer, right region, right moment, and the money is already moving.&quot;">
+        <header class="slide__header">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">04</span>
+        </header>
+        <div class="slide__body">
+          <p class="slide__label">Why now</p>
+          <h2 class="slide__headline" style="margin-bottom: 20px;">Right layer. Right region. Right moment.</h2>
+          <div class="momentum-grid">
+            <article class="momentum-card">
+              <div class="momentum-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#1A3C6E" stroke-width="1.5"/><path d="M16 28 L24 16 L32 28" stroke="#111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <p class="momentum-card__stat">US$2.65B+</p>
+              <p class="momentum-card__title">Playbook proven</p>
+              <p class="momentum-card__text">Sakana, Black Forest Labs, Periodic Labs, Humans& — research-first labs binding science to product. <strong>Never executed in LATAM as an independent lab.</strong></p>
+            </article>
+            <article class="momentum-card">
+              <div class="momentum-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="14" width="28" height="22" rx="2" stroke="#1A3C6E" stroke-width="1.5"/><line x1="10" y1="22" x2="38" y2="22" stroke="#E5E5E5" stroke-width="1"/><circle cx="24" cy="30" r="4" fill="#1A3C6E"/></svg>
+              </div>
+              <p class="momentum-card__stat">~US$4.2B</p>
+              <p class="momentum-card__title">Public capital flowing</p>
+              <p class="momentum-card__text">Brazil's PBIA 2024–2028 national AI plan [7]; <strong>39%</strong> of 2025 Brazilian startup capital to AI companies [6]; FINEP + BNDES dedicated AI fund [6].</p>
+            </article>
+            <article class="momentum-card">
+              <div class="momentum-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><polyline points="8,36 18,26 26,30 40,14" stroke="#1A3C6E" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><line x1="8" y1="40" x2="40" y2="40" stroke="#E5E5E5" stroke-width="1"/></svg>
+              </div>
+              <p class="momentum-card__stat">US$4.7B → US$30B</p>
+              <p class="momentum-card__title">Market inflecting</p>
+              <p class="momentum-card__text">LATAM AI ~23% CAGR; Brazil ~25% share [3]. Microsoft committed <strong>US$2.7B</strong> to Brazilian cloud/AI infrastructure [3].</p>
+            </article>
+            <article class="momentum-card">
+              <div class="momentum-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><rect x="12" y="12" width="10" height="10" rx="1" stroke="#E5E5E5" stroke-width="1.5"/><rect x="26" y="12" width="10" height="10" rx="1" stroke="#E5E5E5" stroke-width="1.5"/><rect x="19" y="26" width="10" height="10" rx="1" stroke="#1A3C6E" stroke-width="1.5"/><line x1="17" y1="17" x2="24" y2="26" stroke="#111" stroke-width="1"/><line x1="31" y1="17" x2="24" y2="26" stroke="#111" stroke-width="1"/></svg>
+              </div>
+              <p class="momentum-card__stat">Deployable</p>
+              <p class="momentum-card__title">Capability ready</p>
+              <p class="momentum-card__text">Decision-focused ML and optimization have matured from theory to production-grade methods — the science layer is here.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 5 — Solution -->
+      <section class="slide" data-note="The large models are the brain; we build the judgment. Say it once, clearly.">
+        <header class="slide__header slide__header--tight">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">05</span>
+        </header>
+        <div class="slide__body">
+          <p class="slide__label">Our solution</p>
+          <h2 class="slide__headline slide__headline--compact">One spine: predict → integrate → optimize.</h2>
+          <div class="solution-spine">
+            <article class="solution-step">
+              <span class="solution-step__num">01</span>
+              <h3 class="solution-step__title">Predict</h3>
+              <p class="solution-step__text">Forecasts &amp; risk built for calibration, not leaderboard scores.</p>
+            </article>
+            <div class="solution-step__arrow" aria-hidden="true">→</div>
+            <article class="solution-step solution-step--keystone">
+              <span class="solution-step__badge">Keystone</span>
+              <span class="solution-step__num">02</span>
+              <h3 class="solution-step__title">Integrate</h3>
+              <p class="solution-step__text">Fuse disagreeing models into one trustworthy picture.</p>
+            </article>
+            <div class="solution-step__arrow" aria-hidden="true">→</div>
+            <article class="solution-step">
+              <span class="solution-step__num">03</span>
+              <h3 class="solution-step__title">Optimize</h3>
+              <p class="solution-step__text">Optimal decision under your constraints, cost &amp; risk.</p>
+            </article>
+            <div class="solution-step__arrow solution-step__arrow--final" aria-hidden="true">→</div>
+            <article class="solution-step solution-step--output">
+              <span class="solution-step__num">▸</span>
+              <h3 class="solution-step__title">Decision</h3>
+              <p class="solution-step__text">Judgment you can deploy.</p>
+            </article>
+          </div>
+          <p class="solution-tagline">We don't sell a model. We sell <strong>judgment you can deploy.</strong></p>
+        </div>
+      </section>
+
+      <!-- Slide 6 — Value creation -->
+      <section class="slide slide--surface" data-note="This is what makes us a lab, not an agency — each project sharpens a reusable capability.">
+        <header class="slide__header">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">06</span>
+        </header>
+        <div class="slide__body slide__body--split">
+          <div>
+            <p class="slide__label">How we create value</p>
+            <h2 class="slide__headline">Three outputs, one compounding loop.</h2>
+            <p class="slide__lead">Each project sharpens a reusable capability — what makes us a lab, not an agency.</p>
+          </div>
+          <div class="flywheel" aria-label="Science, product, and pipeline reinforcing each other">
+            <svg class="flywheel__svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="200" cy="200" r="140" stroke="#E5E5E5" stroke-width="1" stroke-dasharray="6 4"/>
+              <path d="M200 60 A140 140 0 0 1 321 140" stroke="#1A3C6E" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+              <path d="M321 260 A140 140 0 0 1 79 260" stroke="#1A3C6E" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+              <path d="M79 140 A140 140 0 0 1 200 60" stroke="#1A3C6E" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+              <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0,0 8,3 0,6" fill="#1A3C6E"/></marker></defs>
+              <g class="flywheel__node">
+                <rect x="152" y="28" width="96" height="56" rx="2" stroke="#1A3C6E" stroke-width="1.5" fill="#fff"/>
+                <text x="200" y="52" text-anchor="middle" fill="#1A3C6E" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="1">01</text>
+                <text x="200" y="70" text-anchor="middle" fill="#111" font-family="Cormorant Garamond, serif" font-size="16" font-weight="500">Science</text>
+              </g>
+              <g class="flywheel__node">
+                <rect x="288" y="172" width="96" height="56" rx="2" stroke="#E5E5E5" stroke-width="1.5" fill="#fff"/>
+                <text x="336" y="196" text-anchor="middle" fill="#1A3C6E" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="1">02</text>
+                <text x="336" y="214" text-anchor="middle" fill="#111" font-family="Cormorant Garamond, serif" font-size="16" font-weight="500">Product</text>
+              </g>
+              <g class="flywheel__node">
+                <rect x="16" y="172" width="96" height="56" rx="2" stroke="#E5E5E5" stroke-width="1.5" fill="#fff"/>
+                <text x="64" y="196" text-anchor="middle" fill="#1A3C6E" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="1">03</text>
+                <text x="64" y="214" text-anchor="middle" fill="#111" font-family="Cormorant Garamond, serif" font-size="14" font-weight="500">Pipeline</text>
+              </g>
+              <text x="200" y="198" text-anchor="middle" fill="#666" font-family="IBM Plex Sans, sans-serif" font-size="11">Compounds</text>
+              <text x="200" y="214" text-anchor="middle" fill="#666" font-family="IBM Plex Sans, sans-serif" font-size="11">each cycle</text>
+            </svg>
+            <ul class="flywheel__legend">
+              <li><strong>Science</strong> — papers, benchmarks → reputation &amp; grants</li>
+              <li><strong>Product</strong> — deployed systems → revenue</li>
+              <li><strong>Pipeline</strong> — paper-to-system method → durable asset</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 7 — Market -->
+      <section class="slide" data-note="TAM proves the category is real and large; SAM proves the region is inflecting; SOM proves you've thought about the first dollars. Don't oversell the regional number — cite the range.">
+        <header class="slide__header slide__header--tight">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">07</span>
+        </header>
+        <div class="slide__body">
+          <p class="slide__label">Market</p>
+          <h2 class="slide__headline slide__headline--compact">Large category. Inflecting region. Credible entry.</h2>
+          <div class="market-rings">
+            <figure class="market-nested" aria-label="TAM, SAM, and SOM market sizing">
+              <!-- TAM -->
+              <div class="market-layer">
+                <div class="market-layer__header">
+                  <span class="market-layer__tag">TAM</span>
+                  <span class="market-layer__desc">Global decision intelligence</span>
+                  <span class="market-layer__figures"><strong>US$15B</strong> <span class="market-layer__arrow">→</span> US$36–50B by 2030</span>
+                </div>
+                <div class="market-layer__frame market-layer__frame--tam">
+                  <!-- SAM -->
+                  <div class="market-layer">
+                    <div class="market-layer__header">
+                      <span class="market-layer__tag">SAM</span>
+                      <span class="market-layer__desc">LATAM AI · beachhead verticals</span>
+                      <span class="market-layer__figures"><strong>US$4.7B</strong> <span class="market-layer__arrow">→</span> US$30B by 2033</span>
+                    </div>
+                    <div class="market-layer__frame market-layer__frame--sam">
+                      <!-- SOM -->
+                      <div class="market-layer__som">
+                        <span class="market-layer__tag market-layer__tag--light">SOM</span>
+                        <span class="market-layer__som-value">US$24M</span>
+                        <span class="market-layer__som-note">0.5% of SAM · 24-month obtainable</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </figure>
+            <div class="market-details">
+              <div class="market-detail">
+                <p class="market-detail__title">TAM — Global decision intelligence</p>
+                <p class="market-detail__text">US$15.22B (2024), ~15–25% CAGR to 2030 [1][2]. Proves the category is real.</p>
+              </div>
+              <div class="market-detail">
+                <p class="market-detail__title">SAM — LATAM AI, beachhead verticals</p>
+                <p class="market-detail__text">Brazil ~25% share, fastest-growing market; manufacturing ~17% of regional AI spend [3].</p>
+              </div>
+              <div class="market-detail market-detail--accent">
+                <p class="market-detail__title">SOM — 24-month obtainable</p>
+                <p class="market-detail__text">0.5% × US$4.7B = <strong>~US$24M</strong> — flagship Lab contracts + first Service-as-software clients in energy, healthcare, finance &amp; industry.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 8 — Business model -->
+      <section class="slide slide--surface" data-note="Emphasize we reach revenue early and don't depend on a single funding source.">
+        <header class="slide__header slide__header--tight">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">08</span>
+        </header>
+        <div class="slide__body">
+          <p class="slide__label">Business model</p>
+          <h2 class="slide__headline slide__headline--compact">Revenue early. Scale later. Multiple capital paths.</h2>
+          <div class="biz-layout">
+            <div class="biz-ladder">
+              <p class="biz-ladder__heading">Revenue tiers</p>
+              <div class="biz-ladder__steps">
+                <article class="biz-ladder__step biz-ladder__step--active">
+                  <span class="biz-ladder__num">01</span>
+                  <div>
+                    <p class="biz-ladder__title">Lab</p>
+                    <p class="biz-ladder__desc">Bespoke R&amp;D · flagship clients · <em>cash now</em></p>
+                  </div>
+                </article>
+                <article class="biz-ladder__step">
+                  <span class="biz-ladder__num">02</span>
+                  <div>
+                    <p class="biz-ladder__title">Service-as-a-software</p>
+                    <p class="biz-ladder__desc">Sector engines via API · <em>repeatable</em></p>
+                  </div>
+                </article>
+                <article class="biz-ladder__step">
+                  <span class="biz-ladder__num">03</span>
+                  <div>
+                    <p class="biz-ladder__title">Products</p>
+                    <p class="biz-ladder__desc">Open-core tools · licensing · <em>scalable</em></p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="biz-capital">
+              <p class="biz-ladder__heading">Capital stack</p>
+              <div class="biz-capital__track">
+                <div class="biz-capital__node"><span>Grants</span><small>FINEP · FAPERJ · EMBRAPII</small></div>
+                <div class="biz-capital__line"></div>
+                <div class="biz-capital__node"><span>Lab $</span><small>Pilots · case studies</small></div>
+                <div class="biz-capital__line"></div>
+                <div class="biz-capital__node"><span>Recurring</span><small>API revenue</small></div>
+                <div class="biz-capital__line"></div>
+                <div class="biz-capital__node biz-capital__node--end"><span>VC / strategic</span><small>Fund &amp; buy [10]</small></div>
+              </div>
+              <p class="biz-capital__note">Non-dilutive first → revenue → dilutive once product shows pull.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 9 — Landscape -->
+      <section class="slide" data-note="The empty cell is the pitch. Point at it. Explain: models predict, we decide — and no one in LATAM owns that layer yet.">
+        <header class="slide__header slide__header--tight">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">09</span>
+        </header>
+        <div class="slide__body">
+          <p class="slide__label">Landscape</p>
+          <h2 class="slide__headline slide__headline--compact">We don't train the brain. We build the judgment on top.</h2>
+          <div class="landscape-grid">
+            <div class="landscape-quadrant landscape-quadrant--crowded">
+              <p class="landscape-quadrant__tag">Foundation models · LATAM</p>
+              <p class="landscape-quadrant__players">Maritaca · WideLabs · Dharma-AI</p>
+              <p class="landscape-quadrant__note">Compete on LLMs &amp; compute — arms race we'd lose [14][15][16]</p>
+            </div>
+            <div class="landscape-quadrant landscape-quadrant--open">
+              <p class="landscape-quadrant__tag">Decision systems · LATAM</p>
+              <p class="landscape-quadrant__players landscape-quadrant__players--hero">Datistica</p>
+              <p class="landscape-quadrant__note">No independent, research-first lab owns this layer</p>
+            </div>
+            <div class="landscape-quadrant">
+              <p class="landscape-quadrant__tag">Foundation models · Global</p>
+              <p class="landscape-quadrant__players">OpenAI · Anthropic · Google · Meta</p>
+              <p class="landscape-quadrant__note">Capital-intensive, general-purpose</p>
+            </div>
+            <div class="landscape-quadrant">
+              <p class="landscape-quadrant__tag">Decision systems · Global</p>
+              <p class="landscape-quadrant__players">Palantir · C3 · vertical ops research</p>
+              <p class="landscape-quadrant__note">Fragmented — none LATAM-native</p>
+            </div>
+          </div>
+          <div class="landscape-stack-mini" aria-hidden="true">
+            <div class="landscape-stack-mini__layer landscape-stack-mini__layer--top">Decision layer — what to do under constraints</div>
+            <div class="landscape-stack-mini__layer">Any model's output — we sit here</div>
+            <div class="landscape-stack-mini__layer landscape-stack-mini__layer--base">Foundation model — what will happen</div>
+          </div>
+          <p class="landscape-footer"><strong>Our wedge:</strong> decision quality on proprietary data — not model size. Dharma-AI bets on efficiency; we bet on <em>what to do with the prediction</em>.</p>
+        </div>
+      </section>
+
+      <!-- Slide 10 — Moat -->
+      <section class="slide slide--surface" data-note="Lead with &quot;we optimize the decision, not the score&quot; — it's the line they'll remember.">
+        <header class="slide__header slide__header--tight">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">10</span>
+        </header>
+        <div class="slide__body">
+          <p class="slide__label">Why we win</p>
+          <blockquote class="moat-quote">We optimize the decision, not the score.</blockquote>
+          <p class="moat-quote__sub">Graded on whether the <em>decision</em> was right — harder, more useful, more defensible than accuracy alone.</p>
+          <div class="moat-row">
+            <article class="moat-item">
+              <svg class="moat-item__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="4" stroke="#1A3C6E" stroke-width="1.5"/><circle cx="22" cy="10" r="4" stroke="#1A3C6E" stroke-width="1.5"/><circle cx="16" cy="22" r="5" fill="#1A3C6E"/></svg>
+              <p class="moat-item__title">Integration keystone</p>
+              <p class="moat-item__text">Fuse heterogeneous models under real constraints — our signature</p>
+            </article>
+            <article class="moat-item">
+              <svg class="moat-item__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="6" y="18" width="20" height="10" rx="1" stroke="#1A3C6E" stroke-width="1.5"/><path d="M10 18 V12 H22 V18" stroke="#111" stroke-width="1.5"/></svg>
+              <p class="moat-item__title">Proprietary compounding</p>
+              <p class="moat-item__text">Data &amp; decision feedback from every Lab engagement</p>
+            </article>
+            <article class="moat-item">
+              <svg class="moat-item__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="12" r="5" stroke="#111" stroke-width="1.5"/><path d="M6 28 Q16 20 26 28" stroke="#1A3C6E" stroke-width="1.5"/></svg>
+              <p class="moat-item__title">Talent magnet</p>
+              <p class="moat-item__text">Recruiting story no LATAM competitor has built</p>
+            </article>
+            <article class="moat-item">
+              <svg class="moat-item__icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M6 26 L16 6 L26 26 Z" stroke="#1A3C6E" stroke-width="1.5" fill="none"/><circle cx="16" cy="20" r="2" fill="#1A3C6E"/></svg>
+              <p class="moat-item__title">First mover</p>
+              <p class="moat-item__text">Empty layer · real data · public-capital tailwind</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 11 — Talent engine -->
+      <section class="slide" data-note="This is the slide that makes investors believe you can recruit — your scarcest input.">
+        <header class="slide__header slide__header--tight">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">11</span>
+        </header>
+        <div class="slide__body">
+          <p class="slide__label">The talent engine</p>
+          <h2 class="slide__headline slide__headline--compact">A lab researchers choose — not flee from.</h2>
+          <p class="talent-lead">LATAM over-produces PhDs its academy can't absorb. [18] We offer what universities can't:</p>
+          <div class="talent-table">
+            <div class="talent-table__head">
+              <span></span>
+              <span>University</span>
+              <span>Datistica</span>
+            </div>
+            <div class="talent-table__row"><span class="talent-table__dim">Publish</span><span class="talent-table__bad">Rigid, slow</span><span class="talent-table__good">Freely — record grows</span></div>
+            <div class="talent-table__row"><span class="talent-table__dim">IP</span><span class="talent-table__bad">Heavy haircuts</span><span class="talent-table__good">Real participation [19]</span></div>
+            <div class="talent-table__row"><span class="talent-table__dim">Work</span><span class="talent-table__bad">Ticket queue</span><span class="talent-table__good">Own a research line</span></div>
+            <div class="talent-table__row"><span class="talent-table__dim">Upside</span><span class="talent-table__bad">Brain drain abroad</span><span class="talent-table__good">Owner · stay a scientist</span></div>
+          </div>
+          <p class="talent-tagline">Frontier science. Your name on it. A piece of what you build.</p>
+        </div>
+      </section>
+
+      <!-- Slide 12 — Roadmap -->
+      <section class="slide slide--surface" data-note="Stress non-dilutive first, dilutive later — capital efficiency is the story.">
+        <header class="slide__header slide__header--tight">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">12</span>
+        </header>
+        <div class="slide__body">
+          <p class="slide__label">Roadmap</p>
+          <h2 class="slide__headline slide__headline--compact">Non-dilutive first. Revenue early. VC when ready.</h2>
+          <div class="roadmap-v2">
+            <article class="roadmap-v2__card roadmap-v2__card--now">
+              <span class="roadmap-v2__phase">0</span>
+              <p class="roadmap-v2__when">Now → 3 mo</p>
+              <p class="roadmap-v2__text">Founders · research faces · papers · accelerators</p>
+            </article>
+            <article class="roadmap-v2__card">
+              <span class="roadmap-v2__phase">1</span>
+              <p class="roadmap-v2__when">3–9 mo</p>
+              <p class="roadmap-v2__text">First paid Lab pilot · ship papers</p>
+            </article>
+            <article class="roadmap-v2__card">
+              <span class="roadmap-v2__phase">2</span>
+              <p class="roadmap-v2__when">6–18 mo</p>
+              <p class="roadmap-v2__text">Public funding — FINEP, FAPERJ, EMBRAPII [7][8][9]</p>
+            </article>
+            <article class="roadmap-v2__card">
+              <span class="roadmap-v2__phase">3</span>
+              <p class="roadmap-v2__when">12–24 mo</p>
+              <p class="roadmap-v2__text">Hire researchers · product emerges from deployments</p>
+            </article>
+            <article class="roadmap-v2__card roadmap-v2__card--future">
+              <span class="roadmap-v2__phase">4</span>
+              <p class="roadmap-v2__when">24 mo+</p>
+              <p class="roadmap-v2__text">VC on papers + deployments + recruiting story</p>
+            </article>
+          </div>
+          <div class="beachhead-split">
+            <div class="beachhead-split__item">
+              <span class="beachhead-split__tag">Research demo</span>
+              <p class="beachhead-split__text">VC capital-allocation — our data, ready now</p>
+            </div>
+            <div class="beachhead-split__item">
+              <span class="beachhead-split__tag">First paying sectors</span>
+              <p class="beachhead-split__text">Energy/O&amp;G + healthcare operations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 13 — Team -->
+      <section class="slide" data-note="Per current guidance, names are kept out of the circulated deck and shared privately. For a live VC meeting you'll typically need to name the team — prepare a private one-pager.">
+        <header class="slide__header slide__header--tight">
+          <a href="#" class="slide__brand"><svg class="slide__mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><use href="#datistica-mark"/></svg><span>Datistica</span></a>
+          <span class="slide__num">13</span>
+        </header>
+        <div class="slide__body slide__body--center">
+          <p class="slide__label">Team</p>
+          <div class="team-grid team-grid--centered">
+            <article class="team-card team-card--vertical">
+              <img src="assets/team-placeholder.svg" alt="" class="team-card__photo team-card__photo--lg" width="140" height="140">
+              <p class="team-card__name">[Founder name]</p>
+              <p class="team-card__role">[Prediction &amp; data science]</p>
+              <p class="team-card__bio">[Short bio — 2–3 lines. Background, research, why this problem.]</p>
+            </article>
+            <article class="team-card team-card--vertical">
+              <img src="assets/team-placeholder.svg" alt="" class="team-card__photo team-card__photo--lg" width="140" height="140">
+              <p class="team-card__name">[Founder name]</p>
+              <p class="team-card__role">[Optimization &amp; decision science]</p>
+              <p class="team-card__bio">[Short bio — 2–3 lines. Background, research, why this problem.]</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 14 — Vision / Close -->
+      <section class="slide slide--dark" data-note="End on the tagline. Stop talking.">
+        <div class="slide__body slide__body--center">
+          <svg class="cover-mark cover-mark--light" viewBox="0 0 64 64" width="40" height="40" aria-hidden="true"><use href="#datistica-mark"/></svg>
+          <p class="slide__label">Vision</p>
+          <h2 class="slide__headline" style="max-width: 720px; text-align: center; font-size: 2rem;">
+            Datistica becomes the institution Latin America's decision-makers — and its best researchers — choose first.
+          </h2>
+          <p class="slide__lead slide__lead--center" style="margin-top: 24px; max-width: 600px;">
+            We turn the region's proprietary data and underused talent into the judgment layer of its most important industries: starting with a few hard decisions, compounding into a lab whose science the rest of the region builds on.
+          </p>
+          <p class="slide__headline slide__headline--lg" style="margin-top: 48px; text-align: center;">AI that decides.</p>
+          <p class="cover-meta"><a href="mailto:contact@datistica.com">contact@datistica.com</a> · <a href="https://datistica.com">datistica.com</a></p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <nav class="deck-controls" aria-label="Slide navigation">
+    <button class="deck-controls__btn" id="prev" type="button" disabled aria-label="Previous slide">← Prev</button>
+    <span class="deck-controls__counter" id="counter">01 / 14</span>
+    <button class="deck-controls__btn" id="next" type="button" aria-label="Next slide">Next →</button>
+    <span class="deck-controls__hint">← → navigate · N notes · F fullscreen</span>
+  </nav>
+
+  <aside class="notes-panel" id="notes-panel" aria-label="Presenter notes">
+    <p class="notes-panel__label">Presenter note</p>
+    <p class="notes-panel__text" id="notes-text"></p>
+  </aside>
+
+  <script src="deck.js"></script>
+</body>
+</html>
