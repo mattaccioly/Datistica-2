@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Datistica — a startup AI lab in Rio de Janeiro. We research decision intelligence and ship it as deployable products.">
-  <title>Datistica</title>
+  <meta name="description" content="Datistica is an applied-science AI lab in Latin America. We turn frontier research in prediction and optimization into decision systems built to be acted on.">
+  <meta property="og:title" content="Datistica — AI that decides">
+  <meta property="og:description" content="Most AI predicts. We build the layer that turns prediction into the right decision.">
+  <title>Datistica — AI that decides | Applied-science AI lab</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,17 +23,18 @@
       </a>
       <div class="nav__right">
         <ul class="nav__links">
+          <li><a href="#what">What we do</a></li>
           <li><a href="#research">Research</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#lab">The Lab</a></li>
           <li><a href="#sectors">Sectors</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
         <button class="lang-toggle" aria-label="Language toggle" type="button">
           <span class="lang-toggle__opt lang-toggle__opt--active">EN</span>
           <span class="lang-toggle__sep" aria-hidden="true">/</span>
           <span class="lang-toggle__opt">PT</span>
         </button>
-        <a href="#contact" class="nav__cta">Contact us</a>
+        <a href="#contact" class="nav__cta">Contact</a>
       </div>
     </nav>
   </header>
@@ -41,16 +44,16 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero__grid">
         <div class="hero__content">
-          <p class="hero__eyebrow reveal">Startup AI Lab &nbsp;&middot;&nbsp; Rio de Janeiro, Brazil</p>
+          <p class="hero__eyebrow reveal">Applied-science AI lab &nbsp;&middot;&nbsp; Latin America</p>
           <h1 id="hero-title" class="hero__headline reveal reveal--delay-1">
-            We make AI that decides.
+            AI that decides.
           </h1>
           <p class="hero__manifesto reveal reveal--delay-2">
-            Datistica is a research lab that ships products. We study how to turn predictions into better decisions, then build that work into software companies can actually use.
+            Most AI predicts. We build the layer that turns prediction into the <em>right decision</em> — calibrated, constrained, and accountable. Frontier science, made to be acted on.
           </p>
           <div class="hero__actions reveal reveal--delay-3">
-            <a href="#products" class="btn btn--primary">See our products</a>
-            <a href="#research" class="btn btn--ghost">Our research</a>
+            <a href="#contact" class="btn btn--primary">Bring us a decision problem</a>
+            <a href="#careers" class="btn btn--ghost">Join the lab</a>
           </div>
         </div>
         <div class="hero__visual reveal reveal--delay-2">
@@ -59,84 +62,58 @@
       </div>
     </section>
 
-    <section class="pillars band" aria-label="What we stand for">
-      <div class="pillars__grid">
-        <div class="pillar reveal">
-          <span class="pillar__tag">01</span>
-          <h2 class="pillar__title">Rigorous</h2>
-          <p class="pillar__text">We publish our methods and share our work openly. The science behind our products is inspectable, not hidden.</p>
-        </div>
-        <div class="pillar reveal">
-          <span class="pillar__tag">02</span>
-          <h2 class="pillar__title">Prescriptive</h2>
-          <p class="pillar__text">Every product connects insight to action. We build systems that recommend what to do, not just what might happen.</p>
-        </div>
-        <div class="pillar reveal">
-          <span class="pillar__tag">03</span>
-          <h2 class="pillar__title">Deployable</h2>
-          <p class="pillar__text">Our work ships as software that runs in real operations&nbsp;&mdash; integrated into the systems where decisions are made every day.</p>
-        </div>
-      </div>
+    <section class="manifesto-band band" aria-label="Manifesto">
+      <blockquote class="manifesto-band__text reveal">
+        We build AI that decides — not predictions that win benchmarks, but decisions that hold up when you act on them.
+      </blockquote>
     </section>
 
-    <section id="research" class="section">
+    <section id="gap" class="section">
       <div class="split reveal">
         <div class="split__text">
-          <h2 class="section__label">The gap we close</h2>
+          <h2 class="section__label">The gap</h2>
           <p class="pullquote">
-            Most AI tells you what might happen. We build systems that tell you what to do.
+            Everyone can predict. Almost no one decides well.
           </p>
           <div class="prose">
             <p>
-              A good forecast is not the same as a good decision. You can predict demand accurately and still run out of stock. You can flag equipment at risk and still build a plan your team cannot execute. The model works. The outcome does not.
+              The last decade made prediction cheap. Any team can now forecast demand, score risk, or flag an anomaly. Yet the hardest part of any operation was never the forecast — it's the decision that comes <em>after</em> it: what to do, under real constraints, real costs, and real uncertainty, when being wrong is expensive.
             </p>
             <p>
-              Datistica builds the full path from data to action. We research how prediction and decision-making fit together, then turn that research into products companies can deploy.
+              That gap — between a model's output and a defensible decision — is where value leaks out of most AI projects. It's the gap we close.
             </p>
           </div>
         </div>
         <figure class="gap-diagram" aria-labelledby="gap-diagram-caption">
           <svg class="gap-diagram__svg" viewBox="0 0 640 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="gap-diagram-caption">
             <title id="gap-diagram-caption">From data to forecast to action</title>
-            <!-- Stage labels -->
             <text x="72" y="28" fill="#999" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2">DATA</text>
             <text x="272" y="28" fill="#999" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2">FORECAST</text>
             <text x="472" y="28" fill="#1A3C6E" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2">ACTION</text>
-
-            <!-- Data nodes -->
             <circle cx="48" cy="80" r="5" stroke="#111" stroke-width="1.5" fill="none"/>
             <circle cx="48" cy="130" r="5" stroke="#111" stroke-width="1.5" fill="none"/>
             <circle cx="48" cy="180" r="5" stroke="#111" stroke-width="1.5" fill="none"/>
             <circle cx="48" cy="230" r="5" stroke="#111" stroke-width="1.5" fill="none"/>
             <circle cx="48" cy="280" r="5" stroke="#111" stroke-width="1.5" fill="none"/>
-
-            <!-- Forecast box -->
             <rect x="220" y="60" width="140" height="200" rx="2" stroke="#E5E5E5" stroke-width="1" fill="#fff"/>
             <line x1="240" y1="100" x2="340" y2="100" stroke="#E5E5E5" stroke-width="1"/>
             <line x1="240" y1="130" x2="330" y2="130" stroke="#E5E5E5" stroke-width="1"/>
             <line x1="240" y1="160" x2="335" y2="160" stroke="#E5E5E5" stroke-width="1"/>
             <line x1="240" y1="190" x2="325" y2="190" stroke="#E5E5E5" stroke-width="1"/>
             <line x1="240" y1="220" x2="332" y2="220" stroke="#E5E5E5" stroke-width="1"/>
-
-            <!-- Action box -->
             <rect x="420" y="60" width="140" height="200" rx="2" stroke="#1A3C6E" stroke-width="1.5" fill="#fff"/>
             <rect x="440" y="95" width="100" height="28" rx="1" fill="#1A3C6E" fill-opacity="0.08"/>
             <line x1="450" y1="150" x2="530" y2="150" stroke="#E5E5E5" stroke-width="1"/>
             <line x1="450" y1="175" x2="520" y2="175" stroke="#E5E5E5" stroke-width="1"/>
             <line x1="450" y1="200" x2="525" y2="200" stroke="#E5E5E5" stroke-width="1"/>
             <circle cx="490" cy="240" r="8" fill="#1A3C6E"/>
-
-            <!-- Connectors -->
             <line x1="53" y1="80" x2="220" y2="110" stroke="#E5E5E5" stroke-width="1"/>
             <line x1="53" y1="130" x2="220" y2="130" stroke="#E5E5E5" stroke-width="1"/>
             <line x1="53" y1="180" x2="220" y2="150" stroke="#E5E5E5" stroke-width="1"/>
             <line x1="53" y1="230" x2="220" y2="190" stroke="#E5E5E5" stroke-width="1"/>
             <line x1="53" y1="280" x2="220" y2="220" stroke="#E5E5E5" stroke-width="1"/>
-
             <line x1="360" y1="160" x2="420" y2="160" stroke="#111" stroke-width="1.5"/>
             <polygon points="420,160 412,156 412,164" fill="#111"/>
-
-            <!-- Annotation: where most AI stops -->
             <line x1="220" y1="300" x2="360" y2="300" stroke="#E5E5E5" stroke-width="1" stroke-dasharray="4 4"/>
             <text x="222" y="316" fill="#999" font-family="IBM Plex Sans, sans-serif" font-size="11">Most AI stops here</text>
             <line x1="420" y1="300" x2="560" y2="300" stroke="#1A3C6E" stroke-width="1"/>
@@ -144,58 +121,113 @@
           </svg>
         </figure>
       </div>
+    </section>
 
-      <div class="methods reveal">
-        <h3 class="methods__lead">What we research</h3>
-        <ul class="methods__list">
-          <li>
-            <span class="methods__name">Learning for decisions</span>
-            <span class="methods__desc">Models trained on whether the outcome works, not just whether the prediction is close</span>
-          </li>
-          <li>
-            <span class="methods__name">From prediction to action</span>
-            <span class="methods__desc">Systems that connect forecasting directly to the choices your operation needs to make</span>
-          </li>
-          <li>
-            <span class="methods__name">Decisions under uncertainty</span>
-            <span class="methods__desc">Methods for allocating resources when the future is unclear</span>
-          </li>
-          <li>
-            <span class="methods__name">Domain-specific models</span>
-            <span class="methods__desc">Small, focused models built for how your industry actually operates</span>
-          </li>
-        </ul>
+    <section id="what" class="pillars band" aria-labelledby="what-title">
+      <div class="pillars__intro reveal">
+        <h2 id="what-title" class="section__label">What we do</h2>
+        <p class="pillars__lead">From signal to decision.</p>
+        <p class="pillars__sublead">We work across three connected layers. They're not three products — they're one pipeline.</p>
+      </div>
+      <div class="pillars__grid">
+        <div class="pillar reveal">
+          <span class="pillar__tag">01</span>
+          <h3 class="pillar__title">Predict</h3>
+          <p class="pillar__tagline"><em>See what's coming, honestly.</em></p>
+          <p class="pillar__text">Forecasts, risk, and time-to-event models built for calibration and robustness — not leaderboard scores. The number means something, and it holds up when the world shifts.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="pillar__tag">02</span>
+          <h3 class="pillar__title">Integrate</h3>
+          <p class="pillar__tagline"><em>Make your models agree.</em></p>
+          <p class="pillar__text">Real organizations have many models that disagree. We fuse them — machine learning, statistical, and structural — into one coherent, trustworthy picture. This is our signature work, and it's harder than it sounds.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="pillar__tag">03</span>
+          <h3 class="pillar__title">Decide</h3>
+          <p class="pillar__tagline"><em>Turn it into the best action.</em></p>
+          <p class="pillar__text">We translate predictions into the decision that's actually optimal under your constraints, your risk appetite, and your cost of being wrong. This is where prediction finally pays for itself.</p>
+        </div>
       </div>
     </section>
 
+    <section id="different" class="section">
+      <h2 class="section__label reveal">How we're different</h2>
+      <p class="pullquote reveal">We're not racing to build the biggest model.</p>
+      <div class="prose reveal" style="max-width: 640px; margin-bottom: 48px;">
+        <p>
+          The world has enough giant general-purpose models, and more capital chasing them than we could ever match. We chose the layer they ignore: the <strong>decision layer</strong>.
+        </p>
+        <p>
+          Think of it this way — the large models are the <em>brain</em>. We build the <em>judgment</em>: the system that takes any model's prediction and turns it into the best possible decision. That's where industrial decisions are actually made, where the data is yours and no one else's, and where world-class work doesn't require a billion-dollar compute bill.
+        </p>
+      </div>
+      <div class="diff-grid reveal">
+        <article class="diff-card">
+          <h3 class="diff-card__title">We optimize the decision, not the score.</h3>
+          <p class="diff-card__text">Most AI is graded on accuracy. We grade ourselves on whether the <em>decision</em> was right — a different, harder, and far more useful target. Models that win benchmarks routinely lose money. Models built around the decision don't.</p>
+        </article>
+        <article class="diff-card">
+          <h3 class="diff-card__title">Built to be deployed.</h3>
+          <p class="diff-card__text">Every line of research we pursue has to clear one bar: it must be both publishable as science and deployable as a product. If a result can't improve a real decision, it isn't ours.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sectors" class="section band band--light">
+      <h2 class="section__label reveal">Where we work</h2>
+      <p class="section__lead reveal">Hard decisions, high stakes.</p>
+      <p class="section__intro reveal">We focus where decisions are expensive, repeated, and rich in data.</p>
+      <div class="sectors-grid reveal">
+        <article class="sector-card">
+          <h3 class="sector-card__name">Energy &amp; Oil and Gas</h3>
+          <p class="sector-card__text">Dispatch, contracting, and planning under uncertainty.</p>
+        </article>
+        <article class="sector-card">
+          <h3 class="sector-card__name">Healthcare operations</h3>
+          <p class="sector-card__text">Capacity, risk, and resource allocation.</p>
+        </article>
+        <article class="sector-card">
+          <h3 class="sector-card__name">Finance &amp; investment</h3>
+          <p class="sector-card__text">Capital allocation and risk under competing outcomes.</p>
+        </article>
+        <article class="sector-card">
+          <h3 class="sector-card__name">Industry</h3>
+          <p class="sector-card__text">Forecasting and operations where small decisions compound.</p>
+        </article>
+      </div>
+      <p class="sectors-note reveal"><em>Don't see your sector? If the decision is hard and the data is real, <a href="#contact">talk to us</a>.</em></p>
+    </section>
+
     <section id="lab" class="section section--wide">
-      <h2 class="section__label reveal">How we engage</h2>
-      <p class="section__lead reveal">Three ways to work with us&nbsp;&mdash; from ready-made products to full co-development.</p>
+      <h2 class="section__label reveal">The lab model</h2>
+      <p class="section__lead reveal">A lab, not an agency.</p>
+      <p class="section__intro reveal" style="margin-bottom: 48px;">Datistica is built on a simple conviction: the fastest path from frontier science to real-world value is to do both under one roof. We publish, we open-source, and we ship — and each one makes the others stronger.</p>
       <div class="lines">
         <article class="line-card reveal">
           <div class="line-card__visual" aria-hidden="true">
             <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="8" y="20" width="64" height="44" rx="2" stroke="#E5E5E5" stroke-width="1.5"/>
               <line x1="8" y1="36" x2="72" y2="36" stroke="#E5E5E5" stroke-width="1"/>
-              <circle cx="40" cy="52" r="6" fill="#1A3C6E"/>
+              <line x1="20" y1="48" x2="60" y2="48" stroke="#E5E5E5" stroke-width="1"/>
+              <line x1="20" y1="56" x2="52" y2="56" stroke="#E5E5E5" stroke-width="1"/>
             </svg>
           </div>
-          <h3 class="line-card__title">Datistica Products</h3>
-          <p class="line-card__text">Ready-to-deploy decision software, built from our research and licensed for production use.</p>
-          <a href="#products" class="line-card__link">View products &rarr;</a>
+          <h3 class="line-card__title">We do real science.</h3>
+          <p class="line-card__text">Peer-reviewed papers and open benchmarks, not slideware. Our research is public so our work can be judged on its merits.</p>
         </article>
         <article class="line-card reveal">
           <div class="line-card__visual" aria-hidden="true">
             <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="40" r="8" stroke="#111" stroke-width="1.5" fill="none"/>
-              <circle cx="56" cy="40" r="8" stroke="#1A3C6E" stroke-width="1.5" fill="none"/>
-              <line x1="32" y1="40" x2="48" y2="40" stroke="#E5E5E5" stroke-width="1.5"/>
-              <circle cx="40" cy="40" r="3" fill="#1A3C6E"/>
+              <rect x="8" y="30" width="18" height="20" rx="2" stroke="#E5E5E5" stroke-width="1.5"/>
+              <rect x="31" y="30" width="18" height="20" rx="2" stroke="#E5E5E5" stroke-width="1.5"/>
+              <rect x="54" y="30" width="18" height="20" rx="2" stroke="#1A3C6E" stroke-width="1.5"/>
+              <line x1="26" y1="40" x2="31" y2="40" stroke="#111" stroke-width="1.5"/>
+              <line x1="49" y1="40" x2="54" y2="40" stroke="#111" stroke-width="1.5"/>
             </svg>
           </div>
-          <h3 class="line-card__title">Decision Lab</h3>
-          <p class="line-card__text">Custom development for selected partners. We study your problem, build the method, and ship a system tailored to your data.</p>
-          <a href="#contact" class="line-card__link">Start a project &rarr;</a>
+          <h3 class="line-card__title">We turn it into product.</h3>
+          <p class="line-card__text">Research that stays in a PDF helps no one. We build the deployed systems that carry it into the world.</p>
         </article>
         <article class="line-card reveal">
           <div class="line-card__visual" aria-hidden="true">
@@ -207,102 +239,87 @@
               <line x1="24" y1="52" x2="54" y2="44" stroke="#E5E5E5" stroke-width="1"/>
             </svg>
           </div>
-          <h3 class="line-card__title">Research Partnerships</h3>
-          <p class="line-card__text">Joint R&amp;D with companies and institutions. We co-develop methods, publish findings, and turn results into products together.</p>
-          <a href="#contact" class="line-card__link">Partner with us &rarr;</a>
+          <h3 class="line-card__title">We compound.</h3>
+          <p class="line-card__text">Every project sharpens a reusable capability. The lab gets smarter with each problem we solve.</p>
         </article>
       </div>
     </section>
 
-    <section id="products" class="section band band--light">
-      <h2 class="section__label reveal">What we ship</h2>
-      <p class="section__lead reveal">Our research becomes software. Each product is a method we developed, tested, and stand behind.</p>
-      <div class="lines">
-        <article class="line-card reveal">
-          <div class="line-card__visual" aria-hidden="true">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 52 Q24 28 40 40 T72 32" stroke="#111" stroke-width="1.5" fill="none"/>
-              <path d="M8 60 Q28 44 44 52 T72 48" stroke="#E5E5E5" stroke-width="1" fill="none"/>
-              <circle cx="72" cy="32" r="5" fill="#1A3C6E"/>
-            </svg>
-          </div>
-          <h3 class="line-card__title">Forecasting engines</h3>
-          <p class="line-card__text">Models built for your domain&nbsp;&mdash; demand, production, pricing, equipment health. Designed to feed directly into the decisions that follow, not to sit in a dashboard.</p>
-        </article>
-        <article class="line-card reveal">
-          <div class="line-card__visual" aria-hidden="true">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="16" y1="16" x2="16" y2="64" stroke="#E5E5E5" stroke-width="1"/>
-              <line x1="16" y1="64" x2="64" y2="64" stroke="#E5E5E5" stroke-width="1"/>
-              <circle cx="28" cy="28" r="3" fill="#E5E5E5"/>
-              <circle cx="44" cy="44" r="3" fill="#E5E5E5"/>
-              <circle cx="56" cy="24" r="3" fill="#E5E5E5"/>
-              <path d="M28 28 L44 44 L56 24" stroke="#1A3C6E" stroke-width="1.5" fill="none"/>
-              <circle cx="56" cy="24" r="5" fill="#1A3C6E"/>
-            </svg>
-          </div>
-          <h3 class="line-card__title">Optimization layers</h3>
-          <p class="line-card__text">Software that turns forecasts into plans&nbsp;&mdash; allocating inventory, scheduling crews, routing operations, balancing portfolios. Your real constraints are built in from the start.</p>
-        </article>
-        <article class="line-card reveal">
-          <div class="line-card__visual" aria-hidden="true">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8" y="30" width="18" height="20" rx="2" stroke="#E5E5E5" stroke-width="1.5"/>
-              <rect x="31" y="30" width="18" height="20" rx="2" stroke="#E5E5E5" stroke-width="1.5"/>
-              <rect x="54" y="30" width="18" height="20" rx="2" stroke="#1A3C6E" stroke-width="1.5"/>
-              <line x1="26" y1="40" x2="31" y2="40" stroke="#111" stroke-width="1.5"/>
-              <line x1="49" y1="40" x2="54" y2="40" stroke="#111" stroke-width="1.5"/>
-              <circle cx="63" cy="40" r="4" fill="#1A3C6E"/>
-            </svg>
-          </div>
-          <h3 class="line-card__title">Integrated decision pipelines</h3>
-          <p class="line-card__text">End-to-end systems where forecasting and planning are built and deployed together&nbsp;&mdash; as APIs, embedded modules, or automated jobs inside your existing infrastructure.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="sectors" class="section">
-      <h2 class="section__label reveal">Where we apply it</h2>
-      <div class="sectors-grid reveal">
-        <article class="sector-card">
-          <h3 class="sector-card__name">Energy &amp; O&amp;G</h3>
-          <p class="sector-card__text">Which wells to develop, how to allocate production, when to schedule maintenance given equipment and crew limits.</p>
-        </article>
-        <article class="sector-card">
-          <h3 class="sector-card__name">Industry</h3>
-          <p class="sector-card__text">Capacity planning, supply allocation, and maintenance scheduling connected to how the operation actually runs.</p>
-        </article>
-        <article class="sector-card">
-          <h3 class="sector-card__name">Finance</h3>
-          <p class="sector-card__text">Portfolio decisions that account for forecasts, risk limits, and liquidity constraints together.</p>
-        </article>
-        <article class="sector-card">
-          <h3 class="sector-card__name">Healthcare</h3>
-          <p class="sector-card__text">Staff and bed allocation, appointment scheduling, and coverage planning under uncertain demand.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section--compact band band--light">
+    <section id="research" class="section section--compact band band--light">
       <div class="research-tease reveal">
         <div class="research-tease__text">
-          <h2 class="section__label">Research &amp; publications</h2>
-          <p class="research-tease__lead">We share the work behind our products&nbsp;&mdash; papers and technical writing. Science is better when shared.</p>
+          <h2 class="section__label">Research</h2>
+          <p class="research-tease__headline">Read our work.</p>
+          <p class="research-tease__lead">We believe in showing, not claiming. Our research is where you can see how we think — and where our latest results live.</p>
+          <p class="research-tease__status">Publications coming soon — follow us on <a href="https://linkedin.com/company/datistica" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
         </div>
-        <a href="#contact" class="btn btn--ghost">Request our research agenda &rarr;</a>
+        <a href="#contact" class="btn btn--ghost">See all research</a>
+      </div>
+    </section>
+
+    <section id="careers" class="section">
+      <h2 class="section__label reveal">Careers</h2>
+      <p class="pullquote reveal">A lab built for scientists.</p>
+      <p class="section__intro reveal" style="margin-bottom: 12px;">Latin America's best researchers shouldn't have to choose between doing real science and being treated fairly for it.</p>
+      <div class="prose reveal" style="max-width: 640px; margin-bottom: 40px;">
+        <p>
+          We're building the place we wish existed: where you work on frontier problems with real data, <em>keep your name on what you publish</em>, and own a real piece of what you create — without surrendering your ideas to keep doing the work you love.
+        </p>
+      </div>
+      <div class="methods reveal">
+        <h3 class="methods__lead">What it means here</h3>
+        <ul class="methods__list">
+          <li>
+            <span class="methods__name">Publish freely.</span>
+            <span class="methods__desc">Your research record grows with us, not against us.</span>
+          </li>
+          <li>
+            <span class="methods__name">Own your work.</span>
+            <span class="methods__desc">Real participation in the IP you create — not a haircut.</span>
+          </li>
+          <li>
+            <span class="methods__name">Own a line.</span>
+            <span class="methods__desc">You lead a research direction, not a ticket queue.</span>
+          </li>
+          <li>
+            <span class="methods__name">Stay a scientist.</span>
+            <span class="methods__desc">Keep your academic affiliation, your collaborations, your mobility.</span>
+          </li>
+          <li>
+            <span class="methods__name">Be an owner.</span>
+            <span class="methods__desc">Founding researchers share in the upside they help build.</span>
+          </li>
+        </ul>
+      </div>
+      <p class="careers-oneliner reveal"><em>Do frontier science. Keep your name on it. Own a piece of what you build. Stay a scientist.</em></p>
+      <div class="reveal" style="margin-top: 36px;">
+        <a href="#contact" class="btn btn--primary">Tell us what you'd want to work on</a>
+      </div>
+    </section>
+
+    <section id="about" class="section band band--light">
+      <h2 class="section__label reveal">About</h2>
+      <p class="pullquote reveal">What we're building.</p>
+      <div class="prose reveal" style="max-width: 640px;">
+        <p>
+          Datistica is Latin America's home for applied decision science — a lab built on the conviction that the region's data and talent deserve frontier-grade work done <em>here</em>, not imported. We're research-first and product-bound: we publish, we open-source, and we ship, because the shortest path from a new idea to a real decision runs through all three.
+        </p>
       </div>
     </section>
 
     <section id="contact" class="cta-dark band band--dark reveal">
       <div class="cta-dark__inner">
-        <p class="cta-dark__wordmark">Datistica</p>
         <p class="cta-dark__headline">
-          We publish the science.<br>We sell the systems.
+          Have a decision worth getting right?
         </p>
         <p class="cta-dark__text">
-          If you run an operation where allocating resources matters&nbsp;&mdash; and your current tools stop at forecasting&nbsp;&mdash; we should talk.
+          Whether you're an organization with a hard problem, a researcher who wants to build, or a partner who wants in early — we'd like to hear from you.
         </p>
-        <a href="mailto:contact@datistica.com" class="btn btn--light">contact@datistica.com</a>
+        <div class="cta-dark__actions">
+          <a href="mailto:contact@datistica.com" class="btn btn--light">Bring us a decision problem</a>
+          <a href="mailto:contact@datistica.com?subject=Join%20the%20lab" class="btn btn--ghost btn--ghost-on-dark">Join the lab</a>
+        </div>
+        <p class="cta-dark__micro">We read everything. We reply to what fits.</p>
       </div>
     </section>
 
@@ -312,21 +329,27 @@
     <div class="footer__grid">
       <div class="footer__col">
         <p class="footer__wordmark">Datistica</p>
-        <p class="footer__location">Rio de Janeiro &mdash; Brazil</p>
-      </div>
-      <div class="footer__col">
-        <p class="footer__heading">Contact</p>
-        <p><a href="mailto:contact@datistica.com">contact@datistica.com</a></p>
-        <p><a href="https://linkedin.com/company/datistica" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p class="footer__tagline">Applied-science AI lab. AI that decides.</p>
+        <p class="footer__location">Rio de Janeiro, Brazil</p>
       </div>
       <div class="footer__col">
         <p class="footer__heading">Lab</p>
+        <p><a href="#what">What we do</a></p>
         <p><a href="#research">Research</a></p>
-        <p><a href="#products">Products</a></p>
-        <p><a href="#lab">The Lab</a></p>
+        <p><a href="#sectors">Sectors</a></p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Company</p>
+        <p><a href="#about">About</a></p>
+        <p><a href="#careers">Careers</a></p>
+        <p><a href="#contact">Contact</a></p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Follow</p>
+        <p><a href="https://linkedin.com/company/datistica" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       </div>
     </div>
-    <p class="footer__copy">&copy; 2026 Datistica. All rights reserved.</p>
+    <p class="footer__copy">&copy; 2026 Datistica. Rio de Janeiro, Brazil.</p>
   </footer>
 
   <script src="main.js"></script>
