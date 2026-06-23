@@ -235,7 +235,7 @@ We turn the region's proprietary data and underused talent into the judgment lay
 17. Alcor (citing CENIA/ECLAC ILIA 2025) — Chile leads LATAM AI index; Brazil 2nd and holds >90% of regional high-performance compute. https://alcor.com/tech-hubs-in-latin-america/
 18. UFCG / Sinpro-MG (PhD underemployment & brain drain in Brazil); Kauffman Foundation literature on VC selection heuristics. https://cct.ufcg.edu.br/noticias/grupo-de-doutores-quer-mudar-regra-que-obriga-bolsista-do-governo-a-voltar-ao-brasil-nao-e-fuga-de-cerebros/
 19. Brazil — Marco Legal de CT&I (Lei 13.243/2016), enabling negotiated IP splits and researcher participation in gains.
-20. TechCrunch — Thinking Machines Lab US$2B seed (referenced as frontier-lab funding context). https://techcrunch.com/2026/01/20/humans-a-human-centric-ai-startup-founded-by-anthropic-xai-google-alums-raised-480m-seed-round/
+20. TechCrunch — Thinking Machines Lab US$2B seed (referenced as frontier-lab funding context). https://techcrunch.com/2025/07/15/mira-muratis-thinking-machines-lab-is-worth-12b-in-seed-round/
 
 ---
 
